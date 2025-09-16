@@ -114,14 +114,25 @@
       </article>
 
       <!-- House Price Prediction -->
-      <article class="card two shadow hover">
-        <h3 style="margin-top:0">House Price Prediction (Kaggle)</h3>
+      <article class="card shadow hover">
+        <h3 style="margin-top:0">🏠 House Price Prediction</h3>
         <p class="muted">
-          Implemented regression models for predicting house prices using Kaggle dataset.
-          Applied feature engineering, LASSO/Ridge regularization, and cross-validation
-          to improve model robustness.
+          To improve predictive accuracy for house prices, I cleaned the dataset by removing <strong>15 outliers</strong> and 
+          filling missing values using the <strong>median</strong> for numerical variables and <strong>None Type</strong> for categorical variables. 
+          This preprocessing was conducted using <strong>Python</strong> in <strong>Google Colab</strong>.
         </p>
-        <p><a class="btn" href="https://github.com/YourGitHubRepo" target="_blank">GitHub Repo</a></p>
+        <p class="muted">
+          I performed exploratory data analysis using <strong>Seaborn</strong> and <strong>Pandas</strong>, creating side-by-side 
+          <strong>boxplots</strong>, <strong>scatterplots</strong>, and <strong>trajectory plots</strong> for both numerical and categorical variables. 
+          A <strong>non-linear transformation</strong> was applied to the response variable to improve model fit.
+        </p>
+        <p class="muted">
+          Categorical variables were converted into <strong>dummy variables</strong>, and I used <strong>cross-validation</strong> combined with 
+          <strong>backward selection</strong> to identify the most efficient features based on <strong>Root Mean Squared Logarithmic Error (RMSLE)</strong>. 
+          The final regression model predicted prices for <strong>1,459 houses</strong> on Kaggle’s test set, achieving a score of 
+          <strong>0.1641</strong> and placing in the <strong>top 40 percentile</strong> on the leaderboard.
+        </p>
+        <p><a class="btn" href="https://github.com/Chenzhang0329/Spaceship-Titanic-Classification/blob/main/data6100_proj2.ipynb" target="_blank">GitHub Repo</a></p>
       </article>
 
     </div>
