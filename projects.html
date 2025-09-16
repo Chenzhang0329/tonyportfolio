@@ -96,10 +96,19 @@
 
       <!-- Spaceship Titanic -->
       <article class="card two shadow hover">
-        <h3 style="margin-top:0">Spaceship Titanic (Kaggle)</h3>
+        <h3 style="margin-top:0">🛸 Spaceship Titanic Classification on Kaggle</h3>
         <p class="muted">
-          Participated in Kaggle competition. Applied classification models
-          (logistic regression, random forest, XGBoost) to predict passenger survival outcomes.
+          To improve classification accuracy for the <strong>Spaceship Titanic</strong> dataset on <strong>Kaggle</strong>, 
+          I engineered new features such as a binary variable indicating whether a passenger was under 18 years old, which enhanced model performance.
+        </p>
+        <p class="muted">
+          I identified right-skewed variables and transformed them into <strong>Bernoulli features</strong> to reduce noise—for example, converting <strong>'Food Service'</strong> into <strong>'Zero Food Service'</strong> to indicate spending behavior. 
+          I applied <strong>one-hot encoding</strong> to all categorical variables and trained a <strong>Logistic Regression</strong> model, achieving a mean cross-validation accuracy of <strong>0.79</strong>.
+        </p>
+        <p class="muted">
+          I also built a <strong>Naive Bayes</strong> model by selecting features based on marginal accuracy, ultimately using all features to reach an accuracy of <strong>0.7732</strong>. 
+          After comparing both models using <strong>precision</strong>, <strong>recall</strong>, and <strong>accuracy</strong>, 
+          I submitted predictions using the logistic model and achieved a final Kaggle score of <strong>0.7896</strong>, placing in the <strong>top 50 percentile</strong> on the leaderboard.
         </p>
         <p><a class="btn" href="https://github.com/YourGitHubRepo" target="_blank">GitHub Repo</a></p>
       </article>
