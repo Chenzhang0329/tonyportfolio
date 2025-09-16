@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Working Experience · Tony Zhang</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="nav">
+      <div class="brand"><div class="logo"></div><div><div class="name">Tony Zhang</div><div class="sub">Data · Analytics · R / Python</div></div></div>
+      <nav class="menu">
+        <a class="active" href="experience.html">Working Experience</a>
+        <a href="projects.html">Academic Project</a>
+        <a href="teaching.html">Teaching Experience</a>
+        <a href="contact.html">Contacts</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <h1>Working Experience</h1>
+    <div class="grid">
+      <div class="card two">
+        <h3>Data / Analytics — Company A</h3>
+        <div class="tag">2024–Present</div>
+        <ul class="list">
+          <li>Built automated data pipeline (R/Python), reduced manual time by 60%.</li>
+          <li>Designed ggplot2 dashboards for stakeholders; improved decision cadence.</li>
+          <li>Delivered Quarto weekly brief with reproducible workflows.</li>
+        </ul>
+      </div>
+      <div class="card two">
+        <h3>Analyst — Company B</h3>
+        <div class="tag">2022–2024</div>
+        <ul class="list">
+          <li>EDA & reporting with pandas/SQL; standardized data QC.</li>
+          <li>Partnered with X team to ship KPI pack; improved on-time delivery by 25%.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>© <span id="year"></span> Tony Zhang</footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
