@@ -57,14 +57,22 @@ a:hover{color:#cfe0ff; text-decoration:underline}
   padding:12px 20px;
 }
 .brand{display:flex; align-items:center; gap:12px}
-.brand .logo{
-  width:36px; height:36px; border-radius:10px;
-  background:
-    radial-gradient(circle at 30% 30%, var(--brand), transparent 60%),
-    radial-gradient(circle at 70% 70%, var(--accent), transparent 60%),
-    linear-gradient(145deg,#1a2233,#0b111d);
-  border:1px solid var(--border);
-  box-shadow: inset 0 0 20px rgba(122,162,255,.15);
+.brand .logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;   /* 圆形效果 */
+  overflow: hidden;     /* 裁剪溢出 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 保证填满且不变形 */
 }
 .name{font-weight:800; letter-spacing:.3px}
 .sub{color:var(--muted); font-size:12px}
