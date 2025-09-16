@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Academic Project · Tony Zhang</title>
+  <title>Academic Projects · Tony Zhang</title>
   <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
   <div class="topbar">
     <div class="nav">
-      <div class="brand"><div class="logo"></div><div><div class="name">Tony Zhang</div><div class="sub">Data · Analytics · R / Python</div></div></div>
+      <a class="brand" href="index.html"><div class="logo"></div><div><div class="name">Tony Zhang</div></div></a>
       <nav class="menu">
         <a href="experience.html">Working Experience</a>
         <a class="active" href="projects.html">Academic Project</a>
@@ -21,37 +21,12 @@
 
   <main class="wrap">
     <h1>Academic Project (Work Samples)</h1>
-    <div class="grid">
-      <div class="card two">
-        <h3>Music Recommendation (demo)</h3>
-        <div class="tag">Python</div><div class="tag">EDA · Viz</div>
-        <p>Exploratory analysis and prototype recommendation visuals.</p>
-      </div>
-      <div class="card two">
-        <h3>Market Signals (prototype)</h3>
-        <div class="tag">R</div><div class="tag">ggplot2</div>
-        <p>Quick-turn charts for trend inspection and communication.</p>
-      </div>
+    <div class="gallery">
+      <figure class="shot"><img src="Music_Recommendation.png"><figcaption>Music Recommendation</figcaption></figure>
+      <figure class="shot"><img src="stock_market.png"><figcaption>Market Signals</figcaption></figure>
+      <figure class="shot"><img src="circle.png"><figcaption>Visualization Motif</figcaption></figure>
     </div>
-
-    <div class="gallery" style="margin-top:12px">
-      <figure class="shot">
-        <img src="Music_Recommendation.png" alt="Music recommendation chart" />
-        <figcaption>Music recommendation — sample visualization</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="stock_market.png" alt="Stock market chart" />
-        <figcaption>Market signals — sample visualization</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="circle.png" alt="Circle visualization" />
-        <figcaption>Visual motif — layout and styling exploration</figcaption>
-      </figure>
-    </div>
-
-    <p class="muted" style="margin-top:16px">
-      Full PDF: <a href="Work%20Sample.pdf">Download work sample</a>
-    </p>
+    <p class="muted" style="margin-top:16px">Full PDF: <a href="Work%20Sample.pdf">Download work sample</a></p>
   </main>
 
   <footer>© <span id="year"></span> Tony Zhang</footer>
