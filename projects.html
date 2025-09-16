@@ -4,12 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Academic Projects · Tony Zhang</title>
+  <meta name="description" content="Tony Zhang — Academic Projects" />
   <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
+  <!-- Topbar -->
   <div class="topbar">
     <div class="nav">
-      <a class="brand" href="index.html"><div class="logo"></div><div><div class="name">Tony Zhang</div></div></a>
+      <a class="brand" href="index.html">
+        <div class="logo">
+          <img src="circle.png" alt="Tony Zhang logo" />
+        </div>
+        <div>
+          <div class="name">Tony Zhang</div>
+          <div class="sub">Data Modeling· Analytics · Visualization</div>
+        </div>
+      </a>
       <nav class="menu">
         <a href="experience.html">Working Experience</a>
         <a class="active" href="projects.html">Academic Project</a>
@@ -20,13 +30,63 @@
   </div>
 
   <main class="wrap">
-    <h1>Academic Project (Work Samples)</h1>
-    <div class="gallery">
-      <figure class="shot"><img src="Music_Recommendation.png"><figcaption>Music Recommendation</figcaption></figure>
-      <figure class="shot"><img src="stock_market.png"><figcaption>Market Signals</figcaption></figure>
-      <figure class="shot"><img src="circle.png"><figcaption>Visualization Motif</figcaption></figure>
+    <h1 class="page-title">Academic Projects</h1>
+    <div class="grid">
+
+      <!-- Songs Recommendation System -->
+      <article class="card two shadow hover">
+        <h3 style="margin-top:0">Songs Recommendation System</h3>
+        <p class="muted">
+          Built a recommendation engine using Spotify dataset, SQL for preprocessing,
+          and Python (pandas, scikit-learn). Designed collaborative filtering
+          models to predict user-song preferences.
+        </p>
+        <p><a class="btn" href="https://github.com/YourGitHubRepo" target="_blank">GitHub Repo</a></p>
+      </article>
+
+      <!-- Stock Forecasting -->
+      <article class="card two shadow hover">
+        <h3 style="margin-top:0">Stock Forecasting (Hybrid LSTM)</h3>
+        <p class="muted">
+          Designed and trained hybrid LSTM deep learning models to forecast stock prices.
+          Integrated time series analysis with deep learning architectures
+          to improve prediction accuracy.
+        </p>
+        <p><a class="btn" href="https://github.com/YourGitHubRepo" target="_blank">GitHub Repo</a></p>
+      </article>
+
+      <!-- Automakers Stock Dashboard -->
+      <article class="card two shadow hover">
+        <h3 style="margin-top:0">Automakers Stock Dashboard</h3>
+        <p class="muted">
+          Developed an interactive RShiny dashboard for visualizing stock data of major automakers.
+          Implemented ARIMA models for time series forecasting and trend visualization.
+        </p>
+        <p><a class="btn" href="https://github.com/YourGitHubRepo" target="_blank">GitHub Repo</a></p>
+      </article>
+
+      <!-- Spaceship Titanic -->
+      <article class="card two shadow hover">
+        <h3 style="margin-top:0">Spaceship Titanic (Kaggle)</h3>
+        <p class="muted">
+          Participated in Kaggle competition. Applied classification models
+          (logistic regression, random forest, XGBoost) to predict passenger survival outcomes.
+        </p>
+        <p><a class="btn" href="https://github.com/YourGitHubRepo" target="_blank">GitHub Repo</a></p>
+      </article>
+
+      <!-- House Price Prediction -->
+      <article class="card two shadow hover">
+        <h3 style="margin-top:0">House Price Prediction (Kaggle)</h3>
+        <p class="muted">
+          Implemented regression models for predicting house prices using Kaggle dataset.
+          Applied feature engineering, LASSO/Ridge regularization, and cross-validation
+          to improve model robustness.
+        </p>
+        <p><a class="btn" href="https://github.com/YourGitHubRepo" target="_blank">GitHub Repo</a></p>
+      </article>
+
     </div>
-    <p class="muted" style="margin-top:16px">Full PDF: <a href="Work%20Sample.pdf">Download work sample</a></p>
   </main>
 
   <footer>© <span id="year"></span> Tony Zhang</footer>
