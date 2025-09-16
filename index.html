@@ -4,13 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tony Zhang · Portfolio</title>
+  <meta name="description" content="Portfolio — Working Experience, Academic Projects, Education, Highlight Skills, Certifications, Contacts." />
   <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
+  <!-- Top Nav -->
   <div class="topbar">
     <div class="nav">
       <a class="brand" href="index.html">
-        <div class="logo"></div>
+        <div class="logo" aria-hidden="true"></div>
         <div>
           <div class="name">Tony Zhang</div>
           <div class="sub">Data · Analytics · R / Python</div>
@@ -25,19 +27,20 @@
     </div>
   </div>
 
-  <main class="wrap">
-    <section class="hero">
+  <div class="wrap">
+    <!-- Hero -->
+    <section class="hero card shadow">
       <div>
         <div class="kicker">Portfolio</div>
         <h1>From data to decisions.</h1>
-        <p>Hi, I’m Tony — welcome to my portfolio site. Use the menu above to explore my work and get in touch.</p>
+        <p class="muted">Hi, I’m Tony — welcome to my portfolio site. Use the menu or the sections below to explore my work, education, skills, and certifications.</p>
         <div class="cta">
           <a class="btn primary" href="projects.html">See work samples</a>
-          <a class="btn" href="Work%20Sample.pdf">Download work sample</a>
+          <a class="btn" href="resume.pdf">Download CV</a>
         </div>
       </div>
-      <div class="card">
-        <h3>Highlights</h3>
+      <div class="card inner">
+        <h3 style="margin-top:0">Highlights</h3>
         <ul class="list">
           <li><span class="pill">R</span> tidyverse · ggplot2 · Quarto/Rmd</li>
           <li><span class="pill">Python</span> pandas EDA & quick models</li>
@@ -45,10 +48,54 @@
         </ul>
       </div>
     </section>
-  </main>
+
+    <!-- Four primary sections -->
+    <section class="section" style="margin-top:24px">
+      <div class="grid">
+        <!-- Portfolio -->
+        <article class="card two shadow hover">
+          <h3 style="margin-top:0">Portfolio</h3>
+          <p class="muted">Selected academic projects and visual work samples in R/Python.</p>
+          <p style="margin-top:10px"><a class="btn" href="projects.html">View projects</a></p>
+        </article>
+
+        <!-- Education -->
+        <article class="card two shadow hover">
+          <h3 style="margin-top:0">Education</h3>
+          <ul class="list" style="margin-top:8px">
+            <li><span class="pill">MSc</span> Program / University — Year</li>
+            <li><span class="pill">BSc</span> Program / University — Year</li>
+          </ul>
+          <p style="margin-top:10px"><a class="btn" href="resume.pdf">Download CV</a></p>
+        </article>
+
+        <!-- Highlight Skills -->
+        <article class="card two shadow hover">
+          <h3 style="margin-top:0">Highlight Skills</h3>
+          <p class="muted">R (tidyverse, ggplot2), Python (pandas), SQL, Quarto/RMarkdown, visualization.</p>
+          <div style="margin-top:10px">
+            <span class="pill">R</span>
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Quarto</span>
+            <span class="pill">ggplot2</span>
+          </div>
+        </article>
+
+        <!-- Certifications -->
+        <article class="card two shadow hover">
+          <h3 style="margin-top:0">Certifications</h3>
+          <ul class="list" style="margin-top:8px">
+            <li><span class="pill">Coursera</span> Example Certificate — Year</li>
+            <li><span class="pill">Microsoft</span> Example Certification — Year</li>
+          </ul>
+          <p style="margin-top:10px"><a class="btn" href="#">See credentials</a></p>
+        </article>
+      </div>
+    </section>
+  </div>
 
   <footer>© <span id="year"></span> Tony Zhang · Built with ♥</footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
-
