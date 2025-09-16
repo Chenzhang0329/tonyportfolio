@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tony Zhang · Portfolio</title>
+  <meta name="description" content="Data & analytics portfolio — R, Python, visualization, reproducible workflows." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f17;--panel:#101826;--ink:#e7ecf3;--muted:#97a0af;--brand:#7aa2ff;--accent:#9ef0c0;
+      --card:#0f1624;--border:#1e2a3d;--link:#a9c1ff
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#0b0f17 0%, #0d1320 100%)}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:42px;height:42px;border-radius:12px;background:radial-gradient(circle at 30% 30%, var(--brand), transparent 60%),
+      radial-gradient(circle at 70% 70%, var(--accent), transparent 60%),
+      linear-gradient(145deg,#1a2233,#0b111d);border:1px solid var(--border)}
+    .name{font-weight:800;letter-spacing:.3px}
+    nav a{margin-left:18px;font-weight:600;color:var(--muted)}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:18px;border:1px solid var(--border);border-radius:18px;background:linear-gradient(180deg,#0e1524 0,#0b111d 100%)}
+    .hero h1{margin:.2em 0;font-size:42px;line-height:1.05}
+    .kicker{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+    .hero p{color:var(--muted);font-size:16px}
+    .cta{display:flex;gap:12px;margin-top:10px}
+    .btn{padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:#0f172a;color:var(--ink);font-weight:700}
+    .btn.primary{background:linear-gradient(180deg,#2a4fff,#5676ff);border:none}
+
+    .grid{margin-top:28px;display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 6;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+    .card h3{margin:0 0 6px}
+    .card p{color:var(--muted);margin:6px 0 0}
+    .tag{display:inline-block;margin-right:6px;margin-top:8px;padding:4px 8px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:12px}
+
+    .two{grid-column:span 6}
+    .full{grid-column:1/-1}
+    .list{list-style:none;padding:0;margin:0}
+    .list li{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px dashed var(--border)}
+    .list li:last-child{border-bottom:none}
+    .pill{font-size:12px;padding:2px 8px;border-radius:999px;background:#0b1324;border:1px solid var(--border);color:var(--muted)}
+
+    .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+    .shot{grid-column:span 6;background:#0b1324;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    .shot img{display:block;width:100%;height:auto}
+    .shot figcaption{padding:10px;color:var(--muted);font-size:13px}
+
+    footer{margin:34px 0 10px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .card{grid-column:1/-1}
+      .shot{grid-column:1/-1}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="name">Tony Zhang</div>
+          <div style="color:var(--muted);font-size:13px">Data · Analytics · R / Python</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#work">Work Samples</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="kicker">Portfolio</div>
+        <h1>From data to decisions.</h1>
+        <p>Hi, I’m Tony — I build clean data pipelines and clear visual stories with <strong>R</strong> and <strong>Python</strong>, focusing on reproducible analysis (RMarkdown/Quarto) and practical modeling.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See projects</a>
+          <a class="btn" href="Work%20Sample.pdf">Download work sample</a>
+        </div>
+      </div>
+      <div>
+        <div class="card full">
+          <h3 style="margin-top:0">Highlights</h3>
+          <ul class="list">
+            <li><span class="pill">R</span> Tidy data workflows with <code>tidyverse</code> and <code>ggplot2</code>.</li>
+            <li><span class="pill">Python</span> Pandas-based EDA and quick modeling.</li>
+            <li><span class="pill">Reporting</span> Reproducible docs via Quarto / RMarkdown.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="grid">
+      <div class="card two">
+        <h3>Music Recommendation (demo)</h3>
+        <div class="tag">Python</div>
+        <div class="tag">EDA · Viz</div>
+        <p>Exploratory analysis and prototype recommendation visuals.</p>
+        <p><a href="#work">Screenshots</a></p>
+      </div>
+      <div class="card two">
+        <h3>Market Signals (prototype)</h3>
+        <div class="tag">R</div>
+        <div class="tag">ggplot2</div>
+        <p>Quick-turn charts for trend inspection and communication.</p>
+        <p><a href="#work">Screenshots</a></p>
+      </div>
+    </section>
+
+    <section id="work" class="grid">
+      <div class="card full">
+        <h3>Work Samples</h3>
+        <p>Below are a few static shots. For full context, see the PDF above.</p>
+        <div class="gallery" style="margin-top:12px">
+          <figure class="shot">
+            <img src="Music_Recommendation.png" alt="Music recommendation chart"/>
+            <figcaption>Music recommendation — sample visualization</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="stock_market.png" alt="Stock market chart"/>
+            <figcaption>Market signals — sample visualization</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="circle.png" alt="Circle visualization"/>
+            <figcaption>Visual motif — layout and styling exploration</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="grid">
+      <div class="card two">
+        <h3>Skills</h3>
+        <p>R (tidyverse, ggplot2), Python (pandas), SAS, SQL; Quarto/RMarkdown; visualization; data cleaning; basic modeling.</p>
+      </div>
+      <div class="card two">
+        <h3>Tooling</h3>
+        <p>Git/GitHub, Jupyter, RStudio; GitHub Pages for static hosting; reproducible environments.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="grid">
+      <div class="card full">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:tony@example.com">tony@example.com</a> · LinkedIn · GitHub</p>
+        <p style="color:var(--muted);font-size:13px">This site is a single static HTML file deployed on GitHub Pages. No tracking.</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Tony Zhang · Built with ♥
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
