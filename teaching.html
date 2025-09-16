@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Teaching Experience · Tony Zhang</title>
+  <title>Researching & Tutoring Experience · Tony Zhang</title>
   <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
@@ -13,7 +13,7 @@
       <nav class="menu">
         <a href="experience.html">Working Experience</a>
         <a href="projects.html">Academic Project</a>
-        <a class="active" href="teaching.html">Teaching Experience</a>
+        <a class="active" href="teaching.html">Researching & Tutoring Experience</a>
         <a href="contact.html">Contacts</a>
       </nav>
     </div>
@@ -27,6 +27,33 @@
     </div>
   </main>
 
+  <main class="wrap">
+    <h1>Research Experience</h1>
+    <div class="grid">
+    <div class="card two shadow hover">
+      <header style="display:flex;align-items:center;gap:12px;margin-bottom:6px">
+        linamar.png
+        <div>
+          <h3 style="margin:0">Research Assistant — University of Guelph</h3>
+          <div class="muted" style="font-size:14px;margin-top:2px">
+            Supervisor: Prof. Yang Sheng · Data Quality & Statistical Monitoring
+          </div>
+        </div>
+      </header>
+      <div class="tag" style="margin-top:6px">May 2023 – Sept 2023</div>
+      <p class="muted" style="margin-top:6px">
+        Conducted research under the supervision of <strong>Prof. Yang Sheng</strong> to improve data quality and statistical monitoring across <strong>60 global factories</strong>. 
+        I designed an adjusted outlier detection system by integrating <strong>cycle time benchmarks</strong> with <strong>z-score intervals</strong>, enhancing anomaly detection accuracy at the machine level. 
+        Applied <strong>Linear Discriminant Analysis</strong>, <strong>independent two-sample t-tests</strong>, 
+        and other statistical methods to compare utilization between <strong>Hastech</strong> and <strong>Linergy</strong> production lines. 
+        Developed an <strong>automated alert system</strong> to update machine cycle time and provide early warnings to factory workers. 
+        Created Python-based automation scripts using <strong>SQLAlchemy</strong>, <strong>SciPy</strong>, <strong>NumPy</strong>, and <strong>Pandas</strong> to streamline data processing and reporting. 
+        This experience deepened my interest in <strong>high-dimensional data science</strong> and large-scale industrial analytics.
+      </p>
+    </div>
+    </div>
+  </main>
+  
   <footer>© <span id="year"></span> Tony Zhang</footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
