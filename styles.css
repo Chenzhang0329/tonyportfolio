@@ -74,10 +74,33 @@ a:hover{color:#cfe0ff;text-decoration:underline}
 .shadow{box-shadow:var(--shadow)}
 .hover{transition:transform var(--t) ease,box-shadow var(--t) ease}
 .hover:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.32)}
+
+/* 列表（Skills 等） */
 .list{list-style:none;margin:0;padding:0}
-.list li{display:flex;gap:10px;padding:10px 0;border-bottom:1px dashed var(--border)}
+.list li{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  align-items:center;
+  column-gap:10px;
+  padding:10px 0;
+  border-bottom:1px dashed var(--border);
+}
 .list li:last-child{border-bottom:none}
-.pill{font-size:12px;padding:2px 8px;border-radius:999px;background:#0b1324;border:1px solid var(--border);color:var(--muted)}
+
+/* pill 标签 */
+.pill{
+  font-size:12px;
+  padding:4px 10px;
+  border-radius:999px;
+  background:#0b1324;
+  border:1px solid var(--border);
+  color:var(--muted);
+  display:inline-flex;
+  align-items:center;
+  white-space:nowrap;
+  flex-shrink:0;
+  line-height:1;
+}
 
 /* 按钮 */
 .btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:#0f172a;color:var(--ink);font-weight:700;transition:transform var(--t-fast) ease,box-shadow var(--t-fast) ease,background var(--t-fast) ease}
@@ -97,3 +120,4 @@ footer{margin:34px 0 10px;color:var(--muted);font-size:13px;text-align:center}
   .two{grid-column:1/-1}
   .menu{gap:14px}
 }
+
