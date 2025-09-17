@@ -115,25 +115,8 @@ a:hover{color:#dce6ff;text-decoration:underline}
 .pill.ml { background:#123524; color:#8ae6b3; border:1px solid #2ba86a; }
 .pill.dl { background:#2b1540; color:#d6a8ff; border:1px solid #8f44dd; }
 .pill.vis { background:#3a230c; color:#f7c47d; border:1px solid #d9963d; }
-/* 针对 MDS pill */
-.pill.mds {
-  background: url('https://github.com/Chenzhang0329/tonyportfolio/blob/main/UG.png') no-repeat 6px center / 16px 16px,
-              #0b1324; /* 保持原本背景色 */
-  padding-left: 28px; /* 给图标留空间 */
-  border: 1px solid #2a4fff;
-  color: #6da9ff;
-  font-weight: 600;
-}
 
-/* 针对 BSc pill */
-.pill.bsc {
-  background: url('https://github.com/Chenzhang0329/tonyportfolio/blob/main/UfT.png') no-repeat 6px center / 16px 16px,
-              #0b1324;
-  padding-left: 28px;
-  border: 1px solid #d9963d;
-  color: #f7c47d;
-  font-weight: 600;
-}
+
 
 
 /* 按钮 */
