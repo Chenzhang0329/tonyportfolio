@@ -117,7 +117,7 @@ a:hover{color:#dce6ff;text-decoration:underline}
 .pill.vis { background:#3a230c; color:#f7c47d; border:1px solid #d9963d; }
 /* 针对 MDS pill */
 .pill.mds {
-  background: url('images/guelph.png') no-repeat 6px center / 16px 16px,
+  background: url('https://github.com/Chenzhang0329/tonyportfolio/blob/main/UG.png') no-repeat 6px center / 16px 16px,
               #0b1324; /* 保持原本背景色 */
   padding-left: 28px; /* 给图标留空间 */
   border: 1px solid #2a4fff;
@@ -127,7 +127,7 @@ a:hover{color:#dce6ff;text-decoration:underline}
 
 /* 针对 BSc pill */
 .pill.bsc {
-  background: url('images/uoft.png') no-repeat 6px center / 16px 16px,
+  background: url('https://github.com/Chenzhang0329/tonyportfolio/blob/main/UfT.png') no-repeat 6px center / 16px 16px,
               #0b1324;
   padding-left: 28px;
   border: 1px solid #d9963d;
